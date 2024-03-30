@@ -10,7 +10,7 @@ tripal_blast.blast_ui:
     _title: 'Tripal BLAST'
     _controller: '\Drupal\tripal_blast\Controller\TripalBlastUIController::ui'
   requirements:
-    _permission: 'administer tripal'
+    _permission: 'access content'
 
 
 # Routes below are for two main query types BLAST shown in the UI.
@@ -22,7 +22,7 @@ tripal_blast.blast_program:
     _title: 'Tripal BLAST'
     _form: '\Drupal\tripal_blast\Form\TripalBlastForm'
   requirements:
-    _permission: 'administer tripal'
+    _permission: 'access content'
     query: 'nucleotide|protein'
     db: 'nucleotide|protein'
 
