@@ -13,14 +13,14 @@ use Drupal\Tests\tripal_chado\Functional\ChadoTestBrowserBase;
  */
 class InstallTest extends ChadoTestBrowserBase {
 
-  protected $defaultTheme = 'stable';
+  protected $defaultTheme = 'stark';
 
   /**
    * Modules to enable.
    *
    * @var array
    */
-  protected static $modules = ['tripal_blast'];
+  protected static $modules = ['tripal','tripal_blast'];
 
   /**
    * Tests that a specific set of pages load with a 200 response.
