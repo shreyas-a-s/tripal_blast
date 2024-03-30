@@ -1,0 +1,7 @@
+
+tripal_blast.blast_ui:
+  title: BLAST
+  description: 'Submit requests for aligning your query to existing BLAST databases.'
+  parent: main
+  route_name: tripal_blast.blast_ui
+  menu_name: main
