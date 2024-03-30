@@ -51,15 +51,15 @@ The following compatibility is proven via automated testing workflows.
 [MaintainabilityBadge]: https://api.codeclimate.com/v1/badges/5071f91a02a3fcafc275/maintainability
 [TestCoverageBadge]: https://api.codeclimate.com/v1/badges/5071f91a02a3fcafc275/test_coverage
 
-[Grid1A-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.1_D10_0x.yml/badge.svg
-[Grid1B-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.1_D10_1x.yml/badge.svg
-[Grid1C-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.1_D10_2x.yml/badge.svg
+[Grid1A-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid1A.yml/badge.svg
+[Grid1B-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid1B.yml/badge.svg
+[Grid1C-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid1C.yml/badge.svg
 
-[Grid2A-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.2_D10_0x.yml/badge.svg
-[Grid2B-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.2_D10_1x.yml/badge.svg
-[Grid2C-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.2_D10_2x.yml/badge.svg
+[Grid2A-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid2A.yml/badge.svg
+[Grid2B-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid2B.yml/badge.svg
+[Grid2C-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid2C.yml/badge.svg
 
-[Grid3C-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-php8.3_D10_2x.yml/badge.svg
+[Grid3C-Badge]: https://github.com/tripal/tripal_blast/actions/workflows/MAIN-phpunit-Grid3C.yml/badge.svg
 
 ## Docker
 
