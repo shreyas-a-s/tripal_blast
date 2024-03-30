@@ -35,12 +35,8 @@ checks:
       threshold: 6
   similar-code:
     enabled: false
-    config:
-      threshold:
   identical-code:
     enabled: false
-    config:
-      threshold:
 
 exclude_patterns:
 - "**/config/"
