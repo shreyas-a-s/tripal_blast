@@ -11,14 +11,14 @@
 tripal_blast.tab1:
   title: 'Configuration'
   route_name: tripal_blast.configuration
-  base_route: tripal_blast.configuration
+  base_route: entity.tripal_blast.blast_database
   weight: 0
 
 # Tripal BLAST Entity Configuration Tab.
 tripal_blast.tab2:
-  title: 'Query Database'
-  route_name: entity.tripal_blast.blast_database  
-  base_route: tripal_blast.configuration
+  title: 'Query Databases'
+  route_name: entity.tripal_blast.blast_database
+  base_route: entity.tripal_blast.blast_database
   weight: 1
 
 # Tripal BLAST Help Tab.
@@ -27,5 +27,5 @@ tripal_blast.tab2:
 tripal_blast.tab3:
   title: 'Help'
   route_name: tripal_blast.help
-  base_route: tripal_blast.configuration
+  base_route: entity.tripal_blast.blast_database
   weight: 2

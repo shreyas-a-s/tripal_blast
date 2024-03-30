@@ -1,6 +1,9 @@
-FROM tripalproject/tripaldocker:latest
+ARG drupalversion='10.2.x-dev'
+ARG phpversion='8.3'
+ARG pgsqlversion="16"
+FROM tripalproject/tripaldocker:drupal${drupalversion}-php${phpversion}-pgsql${pgsqlversion}-noChado
 
-COPY . /var/www/drupal9/web/modules/contrib/tripal_blast
+COPY . /var/www/drupal/web/modules/contrib/tripal_blast
 
 ## Install NCBI Blast+.
 RUN cd / \
@@ -8,11 +11,7 @@ RUN cd / \
   && tar xzf ncbi-blast-2.2.30+-x64-linux.tar.gz \
   && cp ncbi-blast-2.2.30+/bin/* /usr/local/bin
 
-## Download libraries API dependency.
-RUN cd /var/www/drupal9 \
-  && composer require 'drupal/libraries:^4.0'
-
 ## Enable module
-WORKDIR /var/www/drupal9/web/modules/contrib/tripal_blast
+WORKDIR /var/www/drupal/web/modules/contrib/tripal_blast
 RUN service postgresql restart \
   && drush en tripal_blast --yes
