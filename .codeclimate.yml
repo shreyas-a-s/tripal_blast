@@ -1,4 +1,4 @@
-version: "2"         # required to adjust maintainability checks
+version: "2"
 
 checks:
   argument-count:
@@ -36,19 +36,11 @@ checks:
   similar-code:
     enabled: false
     config:
-      threshold: #language-specific defaults. overrides affect all languages.
+      threshold:
   identical-code:
     enabled: false
     config:
-      threshold: #language-specific defaults. overrides affect all languages.
-
-# plugins:
-#   eslint:
-#     enabled: true
-#     channel: "eslint-6"
-#   rubocop:
-#     enabled: true
-#     channel: "rubocop-0-79"
+      threshold:
 
 exclude_patterns:
 - "**/config/"
