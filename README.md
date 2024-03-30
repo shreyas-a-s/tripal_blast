@@ -27,6 +27,14 @@ then be expanded to include additional information including the alignment.
 Download formats are allow users to download these results in the familiar
 tabular, GFF3 or HTML NCBI formats.
 
+## Upgrade to Tripal4 and Drupal10
+
+This module is currently being actively upgraded to Drupal 10. **It should not
+yet be installed on a production site and given to users ;-) but we're getting
+there! For the current progress, check in the
+[upgrade release milestone](https://github.com/tripal/tripal_blast/milestone/1)
+to get an idea of the outstanding tasks needed to be fixed before release.
+
 ## Automated Testing
 
 This package is dedicated to a high standard of automated testing. We use
@@ -67,5 +75,5 @@ The following compatibility is proven via automated testing workflows.
 git clone https://github.com/tripal/tripal_blast.git
 cd tripal_blast
 docker build --tag=tripal/tripal_blast:latest .
-docker run --publish=80:80 -tid --volume=`pwd`:/var/www/drupal9/web/modules/contrib/tripal_blast tripal/tripal_blast:latest
+docker run --publish=80:80 -tid --volume=`pwd`:/var/www/drupal/web/modules/contrib/tripal_blast tripal/tripal_blast:latest
 ```
