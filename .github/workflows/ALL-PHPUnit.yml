@@ -1,6 +1,9 @@
 
 name: PHPUnit
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - 2.x
 
 env:
   PKG_NAME: tripal_blast
