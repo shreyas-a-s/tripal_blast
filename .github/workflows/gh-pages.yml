@@ -27,14 +27,14 @@ jobs:
         uses: actions/configure-pages@v5
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.18' 
+          python-version: '3.18'
       - name: Install Depenendancies
         run: pip install mkdocs mkdocs-material
       - name: Build Documentation
         run: |
           cd mkdocs
           mkdocs build
-      - name: Upload artifact
+      - name: Upload Documentation
         uses: actions/upload-pages-artifact@v3
         with:
           path: mkdocs/site
