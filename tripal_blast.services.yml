@@ -3,8 +3,14 @@
 
 services:
   tripal_blast.database_service:
-    class: Drupal\tripal_blast\Services\TripalBlastDatabaseService  
+    class: Drupal\tripal_blast\Services\TripalBlastDatabaseService
   tripal_blast.job_service:
-    class: Drupal\tripal_blast\Services\TripalBlastJobService    
+    class: Drupal\tripal_blast\Services\TripalBlastJobService
   tripal_blast.program_blastn:
     class: Drupal\tripal_blast\Services\TripalBlastProgramBlastn
+  tripal_blast.program_blastx:
+    class: Drupal\tripal_blast\Services\TripalBlastProgramBlastx
+  tripal_blast.program_tblastn:
+    class: Drupal\tripal_blast\Services\TripalBlastProgramTblastn
+  tripal_blast.program_blastp:
+    class: Drupal\tripal_blast\Services\TripalBlastProgramBlastp
