@@ -81,6 +81,8 @@ markdown_extensions:
 
 theme:
   name: material
+  logo: images/TripalLogo_only.png
+  favicon: images/TripalLogo_only.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
