@@ -210,8 +210,9 @@ class TripalBlastForm extends FormBase {
         $config_query_upload = \Drupal::config('tripal_blast.settings')
           ->get('tripal_blast_config_upload.allow_query');
 
+        // We don't current support this well so disabling for now.
         $is_query_upload_true = $config_query_upload ?? TRUE;
-        if ($is_query_upload_true) {
+        if (FALSE) {
           // Upload a file as an alternative to enter a query sequence.
           $form['#attributes']['enctype'] = 'multipart/form-data';
 
@@ -263,8 +264,9 @@ class TripalBlastForm extends FormBase {
             '#default_value' => $defaults['SELECT_DB'],
           ];
 
+          // We don't currently support this well so its being disabled for now.
           // Allow target upload - allow target configuration set to TRUE.
-          if ($config_query_upload) {
+          if (FALSE) {
             $form['#attributes']['enctype'] = 'multipart/form-data';
 
             //

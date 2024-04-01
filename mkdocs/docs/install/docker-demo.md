@@ -42,12 +42,12 @@ git checkout -b my-feature-or-fix
 ```
 4. Build the docker demonstration image.
 ```
-docker build --tag=tripalBlast:local ./
+docker build --tag=tripalblast:local ./
 ```
 5. Create a container from the previous image in your current directory. The `--volume` part of this command will mount your current directory to the appropriate place inside the container.
 ```
-docker run --publish=80:80 -tid --name=tripalBlast --volume=`pwd`:/var/www/drupal/web/modules/contrib/tripal_blast tripalBlast:local
-docker exec tripalBlast service postgresql restart
+docker run --publish=80:80 -tid --name=tripalblast --volume=`pwd`:/var/www/drupal/web/modules/contrib/tripal_blast tripalblast:local
+docker exec tripalblast service postgresql restart
 ```
 
 Now you can interact with the Tripal site in your browser in all the same ways you would a regular Tripal site by going to https://localhost and logging in using the [Administrative username and password for the Tripal Docker](https://tripaldoc.readthedocs.io/en/latest/install/docker.html#development-site-information).

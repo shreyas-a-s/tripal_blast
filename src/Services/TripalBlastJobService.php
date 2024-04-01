@@ -247,6 +247,7 @@ class TripalBlastJobService {
       $config = \Drupal::service('tripal_blast.database_service')
         ->getDatabaseConfig($blastjob->target_blastdb);
 
+      $job->blastdb = new \stdClass();
       $job->blastdb->db_name = $config['name'];
       $job->blastdb->db_path = $config['path'];
       $job->blastdb->linkout = new \stdClass();
